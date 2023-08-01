@@ -1,14 +1,12 @@
-import '../styles/custom404.scss'
-
+import styles from '../styles/custom404.module.scss'
 
 
 export default function Custom404() {
 
     return (
-        <div className="container custom404">
-            
-            <h1>404 Not Found</h1>
-        </div>
+        <div className={`${styles.custom404}`} >
+            <img src="./notfound.png" alt="" />
+        </div >
 
     )
 }

@@ -19,7 +19,7 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        lng: typeof (window) !== 'undefined' ? JSON.parse(localStorage.getItem('language')) : 'ru',
+        lng: typeof window !== 'undefined' ? JSON.parse(localStorage.getItem('language')) : 'ru',
         fallbackLng: 'ru'
     })
 

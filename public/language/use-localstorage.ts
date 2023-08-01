@@ -8,10 +8,10 @@ const useLocalStorage = (key: string, defaultValue: string) => {
                 return JSON.parse(value)
             } else {
                 localStorage.setItem(key, JSON.stringify(defaultValue))
-                return defaultValue ?? 'ru';
+                return defaultValue;
             }
         } catch (error) {
-            return defaultValue ?? 'ru';
+            return defaultValue;
         }
     })
 
